@@ -4,7 +4,7 @@ This is a web application in which users can create quotes and have those quotes
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Author
-[Samuel Murigi]
+[Samuel Murigi](https://github.com/Sam-Karanja)
 
 ### Demo
 [Quotes]()
