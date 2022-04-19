@@ -30,6 +30,18 @@ export class DisplayComponent implements OnInit {
       this.quotes.splice(index, 1);
     }
   }
+
+  highestUpVote() {
+    this.prevNum = 0;
+    this.lastNum = 0;
+    for (let i = 0; i < this.quotes.length; i++) {
+      this.lastNum = this.quotes[i].upVotes;
+      if (this.lastNum > this.prevNum) {
+        this.prevNum = this.lastNum;
+      }
+    }
+    return this.prevNum;
+  }
   constructor() { }
 
   ngOnInit(): void {
