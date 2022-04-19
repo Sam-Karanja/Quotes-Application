@@ -1,1 +1,31 @@
-<p>display works!</p>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="title">
+          <h1>Quotes</h1>
+        </div>
+        <div *ngFor="let quote of quotes; let i = index">
+          <div class="small-quote-box">
+            <ul>
+              <li id={{i}}>
+                <p appHighlight *ngIf='highestUpVote() === quote.upVotes && quote.upVotes > 0' class="quote-description">
+                  {{quote.description}}</p>
+                <p *ngIf='highestUpVote() !== quote.upVotes || quote.upVotes === 0' class="quote-description">
+                  {{quote.description}}</p>
+                <p class="author"> - <em>{{quote.author}}</em></p>
+                <p class="submitter-list">Submitted by <strong><em> {{quote.submitter}}</em></strong></p>
+                <button (click)="toggleDetails(i)" class="form-button">Toggle Details</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div *ngFor="let quote of quotes; let i = index">
+          <app-quotes-details *ngIf="quote.showDetails" [quote]='quote' (deleteQuote)="deleteQuoteFunction($event, i)">
+          </app-quotes-details>
+        </div>
+        <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+      </div>
+    </div>
+  </div>

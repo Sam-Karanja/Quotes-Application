@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Quote } from 'src/app/model/quote';
 @Component({
   selector: 'app-display',
   templateUrl: './display.component.html',
