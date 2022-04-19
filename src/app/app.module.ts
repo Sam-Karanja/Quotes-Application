@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { DisplayComponent } from './display/display.component';
@@ -15,10 +15,11 @@ import { HighlightDirective } from './highlight.directive';
     DetailsComponent,
     DisplayComponent,
     FormComponent,
-    HighlightDirective
+ 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

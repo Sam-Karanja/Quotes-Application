@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit,EventEmitter,Output, Input } from '@angular/core';
+import { Quote } from '../model/quote';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',

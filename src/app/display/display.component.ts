@@ -11,7 +11,7 @@ export class DisplayComponent implements OnInit {
     new Quote(1, 'Life isn\'t about getting and having, it\'s about giving and being.', 'Kevin Kruse', 'Kevin Kruse', 0, 0, new Date()),
     new Quote(2, 'Whatever the mind of man can conceive and believe, it can achieve.', 'Napoleon Hill', 'Napoleon Hill', 0, 0, new Date()),
     new Quote(3, 'Strive not to be a success, but rather to be of value.', 'Albert Einstein', 'Albert Einstein', 0, 0, new Date()),
-    new Quote(4, 'I attribute my success to this: I never gave or took any excuse.', 'Florence Nightingale', 'Florence Nightingale', 0, 0, new Date()),
+    new Quote(4, 'I attribute my success to this: I never gave or took any excuse.', 'Steve Harvey', 'Steve Harvey', 0, 0, new Date()),
   ];
   prevNum!: number;
   lastNum!: number;

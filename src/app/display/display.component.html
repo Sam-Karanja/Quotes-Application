@@ -22,10 +22,10 @@
       </div>
       <div class="col-md-6">
         <div *ngFor="let quote of quotes; let i = index">
-          <app-quotes-details *ngIf="quote.showDetails" [quote]='quote' (deleteQuote)="deleteQuoteFunction($event, i)">
-          </app-quotes-details>
+          <app-details *ngIf="quote.showDetails" [quote]="quote" (deleteQuote)="deleteQuoteFunction($event, i)">
+          </app-details>
         </div>
-        <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+        <app-form (addQuote)="addNewQuote($event)"></app-form>
       </div>
     </div>
   </div>
